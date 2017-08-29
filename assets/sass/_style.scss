@@ -13,3 +13,16 @@ body{
 		margin-top:142px;
 	}
 }
+#signIn{
+	background-color:$gris_logo;
+	img{
+		margin-top:20px;
+		margin-bottom: 47px;
+	}
+	a{
+		background-color:$yellow_lab;
+	}
+	input{
+		color:$blanco;
+	}
+}
