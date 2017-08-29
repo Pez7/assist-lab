@@ -4,9 +4,12 @@ body{
 	padding:0;
 }
 #login{
-	background-color:$yellow_lab;
+	background-color:$gris_logo;
+	img{
+		margin-top:20px;
+	}
 	a{
-		background-color:$gris_logo;
+		background-color:$yellow_lab;
 		margin-top:142px;
 	}
 }
