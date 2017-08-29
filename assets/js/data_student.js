@@ -442,7 +442,7 @@ var student = [
     "comentarios": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque."
   },
   {
-    "id_coder": "CO035"
+    "id_coder": "CO035",
     "id": "SCL20171145",
     "password": "20171145",
     "nombre": "Murvyn",
