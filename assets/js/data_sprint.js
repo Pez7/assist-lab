@@ -8,7 +8,7 @@ var sprint = [
 		"fecha_inicio": "08-08-2017",
 		"fecha_termino": "23-08-2017" 
 	},
-	
+	{
 		"id": "sp02",
 		"nombre_sprint": "Prototyping",
 		"objetivo": "frameworks CSS",
@@ -51,7 +51,7 @@ var sprint = [
 		"puntos_tecnicos": "1800",
 		"puntos_hse": "1000", 
 		"fecha_inicio": "30-10-2017",
-		"fecha_termino" "17-11-2017"
+		"fecha_termino": "17-11-2017"
 	},
 		{
 		"id": "sp07",
@@ -63,4 +63,4 @@ var sprint = [
 		"fecha_termino": "06-12-2017" 
 	},
 	
-]
+];
