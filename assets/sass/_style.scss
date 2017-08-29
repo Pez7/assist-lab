@@ -3,17 +3,21 @@ body{
 	margin:0;
 	padding:0;
 }
+/*Estilos María Paz*/
 #login{
 	background-color:$gris_logo;
 	img{
 		margin-top:20px;
+		padding-bottom: 71px;
 	}
 	a{
 		background-color:$yellow_lab;
-		margin-top:142px;
+		margin:10px;
+		width:63%;
 	}
+
 }
-#signIn{
+#signInCoder{
 	background-color:$gris_logo;
 	img{
 		margin-top:20px;
@@ -26,3 +30,18 @@ body{
 		color:$blanco;
 	}
 }
+
+#signInJedi{
+	background-color:$gris_logo;
+	img{
+		margin-top:20px;
+		margin-bottom: 47px;
+	}
+	a{
+		background-color:$yellow_lab;
+	}
+	input{
+		color:$blanco;
+	}
+}
+/*Fin estilos María Paz*/
