@@ -7,8 +7,7 @@ function validarId(){
 			var id = studentCredential[i].id;
 			console.log(id + "==" + idCoder);
 			if (id != idCoder) {
-			localStorage.setItem(idCoder);
-			console.log("Usuario:" + IdCoder);
+
 				false;
 			} else {
 				variableUser = true;
@@ -27,8 +26,6 @@ function validarPass(){
 		var password = studentCredential[i].password;
  		var passCoder = $('#passCoder').val();
  		if (password != passCoder) {
- 		localStorage.setItem(passCoder);
- 		console.log("Pass:"+ passCoder);
  			variablePass = false;
  		} else {
  			variablePass = true;
