@@ -3,7 +3,7 @@ body{
 	margin:0;
 	padding:0;
 }
-/*estilos pantalla1 loanding*/
+/*estilos pantalla1 loanding cony*/
 	#loand{
 		background-image: url(../img/fotolab.jpg);
 		background-size: cover;
@@ -34,15 +34,13 @@ body{
 	}
 /*fin pantalla1 loanding*/
  
-/*pantalla marce*/
+/*pantalla calificacion cony*/
 
 #alumnas{
-
 	img{
 		width: 20px;
 		background-size: cover;
 		background-repeat: no-repeat;
-
 	}
 	input{
 		width: 70px;
@@ -56,4 +54,44 @@ body{
 	margin-top: 30px;
 }
 
-/*fin pantalla marce*/
+/*fin pantalla calificacion*/
+
+/*pantalla mi squad */
+
+
+#miscuad{
+	
+	background-color: #fffde7;
+    nav{
+		background-color:$gris_logo;
+		img{
+			width: 120%;
+			margin-left: -18px;
+		}
+	}
+	.sel{
+		margin-top:50px;
+
+	}
+	.datos{
+        background-color: #fffde7;
+	    font-family: $font_principal;
+	   .perfils{
+		   	background-color: red;
+		   	margin-top: 30px;
+		   	width: 40px;
+		   	height: 40px;
+		   	border-radius: 50px;
+		   	margin-left: 50px;
+	   }
+	    .nombrs{
+	        margin-top: 30px;
+	        font-size: 5px;
+	        margin-right: 50px
+	    }
+	}
+} 
+
+	/*opacity: 0.5;
+}
+fin mi squad cony*/
