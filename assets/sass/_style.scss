@@ -5,22 +5,21 @@ body{
 }
 /*estilos pantalla1 loanding cony*/
 	#loand{
-		background-image: url(../img/fotolab.jpg);
+		background-image: url(../img/banners-verticales.png);
 		background-size: cover;
-		height: 100vh;
+	    height: 100%;
 		opacity: 950%;
         background-repeat: no-repeat;
-
 	    img{
 	        border: 0;
 	        margin-top: 20px;
-	        width: 100%;
+	        width: 40%;
+	        height: 100%;
 	        margin-bottom: 0;
 	    }
 	    .tx{
 	    	margin-top: 70px;
-	    	color: #ff9800;
-	    
+	    	color: $gris_logo;
 	    	font-family: 'Encode Sans', sans-serif;
 	    	font-size: 30px;
 	    	font-weight: 800;
@@ -29,7 +28,8 @@ body{
             }
 	    }
 	    i{
-	    	font-size: 20vh;
+	    	font-size: 10vh;
+	    	margin-top: 30px;
 	    }
 	}
 /*fin pantalla1 loanding*/
@@ -56,42 +56,3 @@ body{
 
 /*fin pantalla calificacion*/
 
-/*pantalla mi squad */
-
-
-#miscuad{
-	
-	background-color: #fffde7;
-    nav{
-		background-color:$gris_logo;
-		img{
-			width: 120%;
-			margin-left: -18px;
-		}
-	}
-	.sel{
-		margin-top:50px;
-
-	}
-	.datos{
-        background-color: #fffde7;
-	    font-family: $font_principal;
-	   .perfils{
-		   	background-color: red;
-		   	margin-top: 30px;
-		   	width: 40px;
-		   	height: 40px;
-		   	border-radius: 50px;
-		   	margin-left: 50px;
-	   }
-	    .nombrs{
-	        margin-top: 30px;
-	        font-size: 5px;
-	        margin-right: 50px
-	    }
-	}
-} 
-
-	/*opacity: 0.5;
-}
-fin mi squad cony*/
