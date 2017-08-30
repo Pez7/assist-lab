@@ -22385,7 +22385,7 @@ var studentCredential =[
     $('select').material_select();
 
     $(".striped").hide();
-    var notasAlumnas1 = 0;
+    
     $('#notasAl1').bind("enterKey",function(e){
    		var valorNota = $(this).val();
    		$("#notas1").empty();
@@ -22393,6 +22393,26 @@ var studentCredential =[
    		console.log(valorNota);
    		var notaAcumulada = $("<p>").text(notasAlumnas1+ " puntos");
    		$("#notas1").append(notaAcumulada);
+
+	});
+	var notasAlumnas2 = 0;
+    $('#notasAl2').bind("enterKey",function(e){
+   		var valorNota = $(this).val();
+   		$("#notas2").empty();
+   		notasAlumnas2 += parseInt(valorNota);
+   		console.log(valorNota);
+   		var notaAcumulada = $("<p>").text(notasAlumnas2+ " puntos");
+   		$("#notas2").append(notaAcumulada);
+
+	});
+	var notasAlumnas3 = 0;
+    $('#notasAl3').bind("enterKey",function(e){
+   		var valorNota = $(this).val();
+   		$("#notas3").empty();
+   		notasAlumnas1 += parseInt(valorNota);
+   		console.log(valorNota);
+   		var notaAcumulada = $("<p>").text(notasAlumnas3+ " puntos");
+   		$("#notas3").append(notaAcumulada);
 
 	});
 	$('.input-nota').keyup(function(e){
@@ -22597,6 +22617,7 @@ var studentCredential =[
 
 //FUNICONALIDAD MARCELA
 $(document).ready(function() {
+	var notasAlumnas1 = 0;
 	var sprintArr = [];
 	var cont = 0;
 		var squadArr = [];
@@ -22618,7 +22639,12 @@ $(document).ready(function() {
 
 	var contImg = 1;
 	$("#select-sprint").on("change", function(){
+		notasAlumnas1 = 0;
+		notasAlumnas2 = 0;
+		notasAlumnas3 = 0;
 		$(".striped").show();
+		$("#notas1").empty();$("#notas1").empty()
+		$("#jorn1").empty();
 		var valueSprint = $("#select-sprint").val();
 		$(".contenido-sprint").empty();
 		$(".info-squad").empty();

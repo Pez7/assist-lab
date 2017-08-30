@@ -22,7 +22,12 @@ $(document).ready(function() {
 
 	var contImg = 1;
 	$("#select-sprint").on("change", function(){
+		var notasAlumnas1 = 0;
+		var notasAlumnas2 = 0;
+		var notasAlumnas3 = 0;
 		$(".striped").show();
+		$("#notas1").empty();$("#notas1").empty()
+		$("#jorn1").empty();
 		var valueSprint = $("#select-sprint").val();
 		$(".contenido-sprint").empty();
 		$(".info-squad").empty();

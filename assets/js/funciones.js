@@ -16,6 +16,26 @@
    		$("#notas1").append(notaAcumulada);
 
 	});
+	var notasAlumnas2 = 0;
+    $('#notasAl2').bind("enterKey",function(e){
+   		var valorNota = $(this).val();
+   		$("#notas2").empty();
+   		notasAlumnas2 += parseInt(valorNota);
+   		console.log(valorNota);
+   		var notaAcumulada = $("<p>").text(notasAlumnas2+ " puntos");
+   		$("#notas2").append(notaAcumulada);
+
+	});
+	var notasAlumnas3 = 0;
+    $('#notasAl3').bind("enterKey",function(e){
+   		var valorNota = $(this).val();
+   		$("#notas3").empty();
+   		notasAlumnas1 += parseInt(valorNota);
+   		console.log(valorNota);
+   		var notaAcumulada = $("<p>").text(notasAlumnas3+ " puntos");
+   		$("#notas3").append(notaAcumulada);
+
+	});
 	$('.input-nota').keyup(function(e){
     if(e.keyCode == 13)
     {
