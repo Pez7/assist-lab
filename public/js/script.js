@@ -20467,7 +20467,11 @@ var student = [
     "comentarios": "Nam tristique tortor eu pede."
   },
   {
+<<<<<<< HEAD
     "id_coder": "CO002", 
+=======
+    "id_coder": "CO002",
+>>>>>>> 2d8fdbe3a923940615933753d53d3e584c0efa2e
     "codigo": "SCL20171112",
     "password": "20171112",
     "nombre": "Randie",
@@ -22376,7 +22380,98 @@ var studentCredential =[
     "comments": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus."
   }
 ]
+$(document).ready(function(){
+  //console.log(student);
+ //recorrerStudents(student); 
+    $("#btn").click(function(){
+    	$('#lista').html('');
+    var valorJornada = $('#jornada').val();
 
+      var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://laboratoria-tw.herokuapp.com/studentsByJourney/"+ valorJornada,
+      "method": "GET",
+      "headers": {
+        "cache-control": "no-cache",
+        "postman-token": "193ecddf-3b07-3a26-accf-f88f22d77723"
+      }
+      }
+
+      $.ajax(settings).done(function (response) {
+        console.log(response)
+
+        response.forEach(function(el){
+        	console.log(el);
+               
+            var list= $('<li/>', {'class': 'collection-item avatar'});
+            var img = $('<img/>',{'src': el.foto , 'class': 'circle'});
+            var estudiante = $('<p/>', {'text' : el.nombre + ' ' + el.apellido, 'class' : 'title'});
+            var enlace = $('<a/>', {'href': 'perfilAlumna.html?coder=' + el.id_coder});
+
+            list.append(img);
+            list.append(estudiante);
+            enlace.append(list);
+            
+             $('#lista').append(enlace);
+        })
+
+       /* for (i = 0; i < response.length; i++) {
+            text += "<img src="+ response[i].foto + ">" + "<a href=alumna.html?coder="+response[i].id_coder+">"+response[i].nombre + " " + response[i].apellido +"</a><br>";
+            console.log(lista[i])
+          }*/
+      });
+
+    });
+
+  });
+$(document).ready(function(){
+});
+$(document).ready(function(){
+    var coder_id = getParameterByName('coder');
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://laboratoria-tw.herokuapp.com/students/"+ coder_id,
+      "method": "GET",
+      "headers": {
+        "cache-control": "no-cache",
+        "postman-token": "3fff9c88-9334-0ddf-57af-ac0831b5feae"
+      }
+    }
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+      var alumna = response[0];
+
+      var cont = $('<div/>');
+      
+      var contImgName = $('<div/>');
+      var imagen = $('<img/>', {'src' : alumna.foto});
+      var nameApe = $('<p/>', {'text' : alumna.nombre + alumna.apellido});
+
+
+      contImgName.append(imagen);
+      contImgName.append(nameApe);
+  
+      cont.append(contImgName);
+      
+      $('#perfil').append(cont);
+
+
+    });
+
+  });
+
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
 $(document).ready(function(){
 function validarId(){
 	var variableUser= false;
