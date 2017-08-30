@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Loanding</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body id="alumnas">
+    <nav class="">
+        <div class="nav-wrapper">
+  <ul id="slide-out" class="side-nav">
+    <li><a class="list-group-item" href="login.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp; Home</a></li>
+    <li><a class="list-group-item" href="info-alumnas.html"><i class="fa fa-code fa-2x" aria-hidden="true"></i>&nbsp; Coders</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo center">
+                <img src="img/Logo_Laboratoria_gris.png" class="center" alt="">
+            </a>
+        </div>
+    </nav>
+<div class="container">
+  <div class="row">
+    <div class="col s12 center">
+      <h4>Datos Alumnas</h4>
+       <select name="select-sprint" id="select-sprint">
+        <option value="" disabled selected>Elige un Sprint</option>
+        <option value="0">Sprint 1</option>
+        <option value="1">Sprint 2</option>
+        <option value="2">Sprint 3</option>
+        <option value="3">Sprint 4</option>
+        <option value="4">Sprint 5</option>
+        <option value="5">Sprint 6</option>
+        <option value="6">Sprint 7</option>
+        </select>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+    <!--select de squad-->
+		<table class="striped">
+		    <thead>
+		      <tr>
+		        <th>Alumnas</th>
+		        <th>Asistencia</th>
+		        <th>Notas</th>
+		      </tr>
+		    </thead>
+
+      <tbody>
+        <tr>
+          <td><!--class="circle responsive-img"-->
+            <div id="img-nombre-1"></div>
+          </td> 
+            <td>
+               <select id="jornada1" class="select-assist">
+                  <option value="" disabled selected>Asistencia</option>
+                  <option value="presente">Presente</option>
+                  <option value="faltajust">Falta justificada</option>
+                  <option value="faltainjust">Falta injustificada</option>
+                  <option value="atrasojust">Atraso justificado</option>
+                  <option value="atrasoInjust">Atraso injustificado</option>
+               </select>
+               <div id="jorn1"></div>
+            </td>
+            <td>
+              <input id="notasAl1" class="input-nota" type="type" name="" placeholder="nota">
+              <div class="resnota" id="notas1"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <div id="img-nombre-2"></div>
+            </td>
+            <td>
+               <select id="jornada2" class="select-assist">
+                  <option value="" disabled selected>Asistencia</option>
+                  <option value="presente">Presente</option>
+                  <option value="faltajust">Falta justificada</option>
+                  <option value="faltainjust">Falta injustificada</option>
+                  <option value="atrasojust">Atraso justificado</option>
+                  <option value="atrasoInjust">Atraso injustificado</option>
+               </select>
+               <div id="jorn2"></div>
+            </td>
+            <td>
+              <input id="notasAl2" class="input-nota" type="type" name="" placeholder="nota">
+              <div class="resnota" id="notas2"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <div id="img-nombre-3"></div>
+            </td>
+            <td>
+               <select id="jornada3" class="select-assist">
+                  <option value="" disabled selected>Asistencia</option>
+                  <option value="presente">Presente</option>
+                  <option value="faltajust">Falta justificada</option>
+                  <option value="faltainjust">Falta injustificada</option>
+                  <option value="atrasojust">Atraso justificado</option>
+                  <option value="atrasoInjust">Atraso injustificado</option>
+               </select>
+               <div id="jorn3"></div>
+            </td>
+            <td>
+              <input id="notasAl3" class="input-nota" type="type" name="" placeholder="nota">
+              <div class="resnota" id="notas3"></div>
+            </td>
+        </tr>
+          
+        <tr>
+            <td>
+             <div id="img-nombre-4"></div>
+            </td>
+            <td>
+               <select id="jornada4" class="select-assist">
+                  <option value="" disabled selected>Asistencia</option>
+                  <option value="presente">Presente</option>
+                  <option value="faltajust">Falta justificada</option>
+                  <option value="faltainjust">Falta injustificada</option>
+                  <option value="atrasojust">Atraso justificado</option>
+                  <option value="atrasoInjust">Atraso injustificado</option>
+               </select>
+               <div id="jorn4"></div>
+            </td>
+            <td>
+              <input id="notasAl4" class="input-nota" type="type" name="" placeholder="nota">
+              <div class="resnota" id="notas4"></div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+              <div id="img-nombre-5"></div>
+            </td>
+            <td>
+               <select id="jornada5" class="select-assist">
+                  <option value="" disabled selected>Asistencia</option>
+                  <option value="presente">Presente</option>
+                  <option value="faltajust">Falta justificada</option>
+                  <option value="faltainjust">Falta injustificada</option>
+                  <option value="atrasojust">Atraso justificado</option>
+                  <option value="atrasoInjust">Atraso injustificado</option>
+               </select>
+               <div id="jorn5"></div>
+            </td>
+            <td>
+              <input id="notasAl5" class="input-nota" type="type" name="" placeholder="nota">
+              <div class="resnota" id="notas5"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <div id="img-nombre-6"></div>
+            </td>
+            <td>
+               <select id="jornada6" class="select-assist">
+                  <option value="" disabled selected>Asistencia</option>
+                  <option value="presente">Presente</option>
+                  <option value="faltajust">Falta justificada</option>
+                  <option value="faltainjust">Falta injustificada</option>
+                  <option value="atrasojust">Atraso justificado</option>
+                  <option value="atrasoInjust">Atraso injustificado</option>
+               </select>
+               <div id="jorn6"></div>
+            </td>
+            <td>
+              <input id="notasAl6" class="input-nota" type="type" name="" placeholder="nota">
+              <div class="resnota" id="notas6"></div>
+            </td>
+        </tr>
+
+      </tbody>
+    </table>
+		</div>
+	</div>
+</div>
+
+   
+            
+
+<script src="https://use.fontawesome.com/cf42febda8.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

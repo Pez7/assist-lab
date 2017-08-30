@@ -55,7 +55,7 @@ function validarPass(){
 	 		console.log(valId + "VALIDACION OK");
 	 		if (validarId() === true && validarPass() === true) {
 	 			console.log("pass ok");
-	 			alert("ok");
+	 			window.location.href = "coder-info.html";
 	 		}
 	 	});
 
