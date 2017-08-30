@@ -2,8 +2,11 @@
 body{
 	margin:0;
 	padding:0;
+	background-color:$gray-lighter;
 }
-
+h1,h2,h3,h4,h5,h6{
+	font-family:$font_principal;
+}
 /*Estilos María Paz*/
 #login{
 	background-color:$gris_logo;
@@ -13,6 +16,9 @@ body{
 	}
 	a{
 		background-color:$yellow_lab;
+		font-family:$font_principal;
+		color:$negro;
+		font-weight:700;
 		margin:10px;
 		width:63%;
 	}
@@ -28,6 +34,9 @@ body{
 	}
 	a{
 		background-color:$yellow_lab;
+		font-family:$font_principal;
+		color:$negro;
+		font-weight:700;
 	}
 	input{
 		color:$blanco;
@@ -41,9 +50,13 @@ body{
 	}
 	h5{
 		margin-bottom:45px;
+		font-family:$font_principal;
 	}
 	a{
 		background-color:$yellow_lab;
+		font-family:$font_principal;
+		color:$negro;
+		font-weight:700;
 	}
 	input{
 		color:$blanco;
@@ -83,6 +96,9 @@ body{
 		img{
 			width:50%;
 		}
+		h5{
+			font-weight:700;
+		}
 		p{
 			font-family:$font_principal;
 			font-weight:700;
@@ -95,32 +111,36 @@ body{
 		}
 	}
 }
+.justificado{
+	text-align : justify;
+}
 /***FIN Cindy**/
 
 #coder-info{
 	font-family:$font_principal;
-
+	.nombreSprint{
+		font-family:$font_principal;
+		font-weight:700;
+	}
 }
 
-
-/*estilos pantalla1 loanding*/
+/*estilos pantalla1 loanding cony*/
 	#loand{
-		background-image: url(../img/fotolab.jpg);
+		background-image: url(../img/banners-verticales.png);
 		background-size: cover;
-		height: 100vh;
+	    height: 100%;
 		opacity: 950%;
         background-repeat: no-repeat;
-
 	    img{
 	        border: 0;
 	        margin-top: 20px;
-	        width: 100%;
+	        width: 40%;
+	        height: 100%;
 	        margin-bottom: 0;
 	    }
 	    .tx{
 	    	margin-top: 70px;
-	    	color: #ff9800;
-	    
+	    	color: $gris_logo;
 	    	font-family: 'Encode Sans', sans-serif;
 	    	font-size: 30px;
 	    	font-weight: 800;
@@ -129,7 +149,8 @@ body{
             }
 	    }
 	    i{
-	    	font-size: 20vh;
+	    	font-size: 10vh;
+	    	margin-top: 30px;
 	    }
 	}
 /*fin pantalla1 loanding*/

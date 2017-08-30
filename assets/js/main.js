@@ -33,7 +33,7 @@ $(document).ready(function() {
 		console.log(sprint[valueSprint]);
 
 		var nombreSprint = $("<h5>").attr('class', 'nombre-sprint').text(sprint[valueSprint].nombre_sprint);
-		var objetivosSprint = $("<p>").attr('class', 'objetivos-sprint').text(sprint[valueSprint].objetivo);
+		var objetivosSprint = $("<p>").attr('class', 'objetivos-sprint').text("El objetivo es: "+sprint[valueSprint].objetivo);
 
 		$(".contenido-sprint").append(nombreSprint);
 		$(".contenido-sprint").append(objetivosSprint);

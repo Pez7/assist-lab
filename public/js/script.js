@@ -20302,7 +20302,7 @@ $(document).ready(function() {
         $(".contenido-sprint-al").empty();
         $(".info-squad-al").empty();
         console.log(sprint[valueSprint]);
-        var nombreSprint = $("<h5>").attr('class', 'nombre-sprint').text(sprint[valueSprint].nombre_sprint);
+        var nombreSprint = $("<h5>").attr('class', 'nombre-sprint center').text(sprint[valueSprint].nombre_sprint);
         var objetivosSprint = $("<p>").attr('class', 'objetivos-sprint').text(sprint[valueSprint].objetivo);
         var nombreJedi = $("<p>").attr('class', 'nombre-jedi').text("Tu Jedi Master es: "+jediArr[contJedi]);
         $(".contenido-sprint-al").append(nombreSprint);
@@ -22435,7 +22435,7 @@ var studentCredential =[
 ]
  function redireccionar() {
     setTimeout("location.href='login.html'", 3000);
-  }
+  };
 
     $(document).ready(function() {
     $('select').material_select();
@@ -22778,7 +22778,7 @@ $(document).ready(function() {
 		console.log(sprint[valueSprint]);
 
 		var nombreSprint = $("<h5>").attr('class', 'nombre-sprint').text(sprint[valueSprint].nombre_sprint);
-		var objetivosSprint = $("<p>").attr('class', 'objetivos-sprint').text(sprint[valueSprint].objetivo);
+		var objetivosSprint = $("<p>").attr('class', 'objetivos-sprint').text("El objetivo es: "+sprint[valueSprint].objetivo);
 
 		$(".contenido-sprint").append(nombreSprint);
 		$(".contenido-sprint").append(objetivosSprint);
@@ -22836,12 +22836,12 @@ if($("#perfil-alumnas").length > 0){
         $('#perfil').append(
                     '<div class="row">'+
                         '<div class="col s12 center">'+
-                            '<h3>'+estudiante.first_name+" "+estudiante.last_name+'</h3>'+
+                            '<img src="'+estudiante.photo+'" alt="">'+
                         '</div>'+
                     '</div>'+
                     '<div class="row">'+
                         '<div class="col s12 center">'+
-                            '<img src="'+estudiante.photo+'" alt="">'+
+                            '<h5>'+estudiante.first_name+" "+estudiante.last_name+'</h5>'+
                         '</div>'+
                     '</div>'+
                     '<div class="row">'+
@@ -22850,7 +22850,7 @@ if($("#perfil-alumnas").length > 0){
                             '<p>Mail: <span>'+estudiante.email+'</span></p>'+
                             '<p>Repositorio:<a href="'+estudiante.github+'"> Visitar</a></p>'+
                             '<p>Asistencia: <span class="red-text">En Riesgo</span></p>'+
-                            '<p>Comentarios: <span>"'+estudiante.comments+'"</span></p>'+
+                            '<p class="justificado">Comentarios: <span>"'+estudiante.comments+'"</span></p>'+
                         '</div>'+
                     '</div>');
     });

@@ -26,7 +26,7 @@ $(document).ready(function() {
         $(".contenido-sprint-al").empty();
         $(".info-squad-al").empty();
         console.log(sprint[valueSprint]);
-        var nombreSprint = $("<h5>").attr('class', 'nombre-sprint').text(sprint[valueSprint].nombre_sprint);
+        var nombreSprint = $("<h5>").attr('class', 'nombre-sprint center').text(sprint[valueSprint].nombre_sprint);
         var objetivosSprint = $("<p>").attr('class', 'objetivos-sprint').text(sprint[valueSprint].objetivo);
         var nombreJedi = $("<p>").attr('class', 'nombre-jedi').text("Tu Jedi Master es: "+jediArr[contJedi]);
         $(".contenido-sprint-al").append(nombreSprint);

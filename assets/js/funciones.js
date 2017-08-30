@@ -1,6 +1,6 @@
  function redireccionar() {
     setTimeout("location.href='login.html'", 3000);
-  }
+  };
 
     $(document).ready(function() {
     $('select').material_select();

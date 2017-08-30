@@ -14,12 +14,12 @@ if($("#perfil-alumnas").length > 0){
         $('#perfil').append(
                     '<div class="row">'+
                         '<div class="col s12 center">'+
-                            '<h3>'+estudiante.first_name+" "+estudiante.last_name+'</h3>'+
+                            '<img src="'+estudiante.photo+'" alt="">'+
                         '</div>'+
                     '</div>'+
                     '<div class="row">'+
                         '<div class="col s12 center">'+
-                            '<img src="'+estudiante.photo+'" alt="">'+
+                            '<h5>'+estudiante.first_name+" "+estudiante.last_name+'</h5>'+
                         '</div>'+
                     '</div>'+
                     '<div class="row">'+
@@ -28,7 +28,7 @@ if($("#perfil-alumnas").length > 0){
                             '<p>Mail: <span>'+estudiante.email+'</span></p>'+
                             '<p>Repositorio:<a href="'+estudiante.github+'"> Visitar</a></p>'+
                             '<p>Asistencia: <span class="red-text">En Riesgo</span></p>'+
-                            '<p>Comentarios: <span>"'+estudiante.comments+'"</span></p>'+
+                            '<p class="justificado">Comentarios: <span>"'+estudiante.comments+'"</span></p>'+
                         '</div>'+
                     '</div>');
     });
