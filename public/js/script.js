@@ -22471,6 +22471,33 @@ var studentCredential =[
    		$("#notas3").append(notaAcumulada);
 
 	});
+    var notasAlumnas4 = 0;
+    $('#notasAl4').bind("enterKey",function(e){
+        var valorNota = $(this).val();
+        $("#notas4").empty();
+        notasAlumnas4 += parseInt(valorNota);
+        console.log(valorNota);
+        var notaAcumulada = $("<p>").text(notasAlumnas4+ " puntos");
+        $("#notas4").append(notaAcumulada);
+    });
+    var notasAlumnas5 = 0;
+    $('#notasAl5').bind("enterKey",function(e){
+        var valorNota = $(this).val();
+        $("#notas5").empty();
+        notasAlumnas5 += parseInt(valorNota);
+        console.log(valorNota);
+        var notaAcumulada = $("<p>").text(notasAlumnas5+ " puntos");
+        $("#notas5").append(notaAcumulada);
+    });
+    var notasAlumnas6 = 0;
+    $('#notasAl6').bind("enterKey",function(e){
+        var valorNota = $(this).val();
+        $("#notas6").empty();
+        notasAlumnas6 += parseInt(valorNota);
+        console.log(valorNota);
+        var notaAcumulada = $("<p>").text(notasAlumnas6+ " puntos");
+        $("#notas6").append(notaAcumulada);
+    });
 	$('.input-nota').keyup(function(e){
     if(e.keyCode == 13)
     {
