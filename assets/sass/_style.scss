@@ -52,12 +52,33 @@ body{
 /*Fin estilos María Paz*/
 /****INICIO Cindy ***/
 #info-alumnas{
+	nav{
+		background-color:$gris_logo;
+		img{
+			width: 121%;
+			margin-left: -18px;
+		}
+	}
 	select{
 		margin-top: 20px;
 		display: block;
 	}
 	.title{
 		padding-top: 20px;
+		font-family:$font_principal;
+		color:$negro;
+	}
+	button{
+		background-color:$yellow_lab;
+	}
+}
+#perfil-alumnas{
+	nav{
+		background-color:$gris_logo;
+		img{
+			width: 121%;
+			margin-left: -18px;
+		}
 	}
 }
 /***FIN Cindy**/

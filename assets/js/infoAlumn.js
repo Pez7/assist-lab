@@ -1,6 +1,7 @@
 $(document).ready(function(){
   //console.log(student);
- //recorrerStudents(student); 
+ //recorrerStudents(student);
+   $(".button-collapse").sideNav();
     $("#btn").click(function(){
     	$('#lista').html('');
     var valorJornada = $('#jornada').val();
@@ -17,7 +18,7 @@ $(document).ready(function(){
       }
 
       $.ajax(settings).done(function (response) {
-        console.log(response)
+        //console.log(response)
 
         response.forEach(function(el){
         	console.log(el);
@@ -25,7 +26,7 @@ $(document).ready(function(){
             var list= $('<li/>', {'class': 'collection-item avatar'});
             var img = $('<img/>',{'src': el.foto , 'class': 'circle'});
             var estudiante = $('<p/>', {'text' : el.nombre + ' ' + el.apellido, 'class' : 'title'});
-            var enlace = $('<a/>', {'href': 'perfilAlumna.html?coder=' + el.id_coder});
+            var enlace = $('<a/>', {'href': 'perfilAlumna.html?coder=' + el.id});
 
             list.append(img);
             list.append(estudiante);

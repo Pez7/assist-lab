@@ -19,7 +19,7 @@ $(document).ready(function(){
       
       var contImgName = $('<div/>');
       var imagen = $('<img/>', {'src' : alumna.foto});
-      var nameApe = $('<p/>', {'text' : alumna.nombre + alumna.apellido});
+      var nameApe = $('<p/>', {'text' : alumna.nombre + alumna.apellido, 'class': 'texto_alum'});
 
 
       contImgName.append(imagen);

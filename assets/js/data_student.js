@@ -1,7 +1,7 @@
 var student = [
   {
     "id_coder": "CO001",
-    "codigo": "SCL20171111",
+    "id": "SCL20171111",
     "password": "20171111",
     "nombre": "Ag",
     "apellido": "Reville",
@@ -13,12 +13,9 @@ var student = [
     "comentarios": "Nam tristique tortor eu pede."
   },
   {
-<<<<<<< HEAD
-    "id_coder": "CO002", 
-=======
+
     "id_coder": "CO002",
->>>>>>> 2d8fdbe3a923940615933753d53d3e584c0efa2e
-    "codigo": "SCL20171112",
+    "id": "SCL20171112",
     "password": "20171112",
     "nombre": "Randie",
     "apellido": "Biggerstaff",
