@@ -4,6 +4,7 @@
   "description": "\"# assist-lab\"",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "node public/loanding.html"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
