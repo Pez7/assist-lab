@@ -1,11 +1,79 @@
 /*Aqui van tus estilos */
 body{
 	margin:0;
-	padding:0;
-	
+	padding:0;	
 }
 #coder-info{
 	select{
 		display: inline-block;
 	}
 }
+
+
+/*estilos pantalla1 loanding*/
+	#loand{
+		background-image: url(../img/fotolab.jpg);
+		background-size: cover;
+		height: 100vh;
+		opacity: 950%;
+        background-repeat: no-repeat;
+
+	    img{
+	        border: 0;
+	        margin-top: 20px;
+	        width: 100%;
+	        margin-bottom: 0;
+	    }
+	    .tx{
+	    	margin-top: 70px;
+	    	color: #ff9800;
+	    
+	    	font-family: 'Encode Sans', sans-serif;
+	    	font-size: 30px;
+	    	font-weight: 800;
+            h3{
+               font-weight: 900;
+            }
+	    }
+	    i{
+	    	font-size: 20vh;
+	    }
+	}
+/*fin pantalla1 loanding*/
+ 
+/*pantalla marce*/
+
+#alumnas{
+
+	img{
+		width: 30px;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+	
+	.select-assist{
+		
+		input{
+			width: 70px;
+			height: 30px;
+		}
+	}
+	#select-sprint{
+		
+		width: 100%;
+		input{
+			width: 100%;
+		}
+	}
+	.input-nota{
+		width: 70px;
+		height: 30px;
+	}
+}
+.tit{
+	margin-top: 30px;
+}
+
+/*fin pantalla marce*/
+

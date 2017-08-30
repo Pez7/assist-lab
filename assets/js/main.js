@@ -9,7 +9,8 @@ $(document).ready(function() {
 			
 				var nombreAlumn = studentCredential[i].first_name + " " + studentCredential[i].last_name;
 				var idAlumna = studentCredential[i].id;
-				squadArr.push({"nombreAlumn": nombreAlumn, "idcoder": idAlumna});
+				var fotoAlumna = studentCredential[i].photo;
+				squadArr.push({"nombreAlumn": nombreAlumn, "idcoder": idAlumna, "fotoAlumna": fotoAlumna});
 				cont++;
 			if(cont == 6){
 				sprintArr.push(squadArr);
@@ -19,9 +20,9 @@ $(document).ready(function() {
 		}
 	console.log(sprintArr);
 
-
+	var contImg = 1;
 	$("#select-sprint").on("change", function(){
-		
+		$(".striped").show();
 		var valueSprint = $("#select-sprint").val();
 		$(".contenido-sprint").empty();
 		$(".info-squad").empty();
@@ -34,8 +35,11 @@ $(document).ready(function() {
 		$(".contenido-sprint").append(objetivosSprint);
 
 		sprintArr[valueSprint].forEach(function(el){
+			var foto = $('<img src="'+el.fotoAlumna+'">');
 			var alumnSquad = $('<a href=alumna.html?coder='+el.idcoder+'>'+el.nombreAlumn + '</a>');
-			$(".info-squad").append(alumnSquad);
+			$("#img-nombre-"+contImg).append(foto);
+			$("#img-nombre-"+contImg).append(alumnSquad);
+			contImg++;
 		});
 
 	});

@@ -20396,7 +20396,7 @@ var sprint = [
 		"fecha_inicio": "08-08-2017",
 		"fecha_termino": "23-08-2017" 
 	},
-	{
+	    { 
 		"id": "sp02",
 		"nombre_sprint": "Prototyping",
 		"objetivo": "frameworks CSS",
@@ -20405,7 +20405,7 @@ var sprint = [
 		"fecha_inicio": "24-08-2017",
 		"fecha_termino": "08-09-2017" 
 	},
-	{
+	    {
 		"id": "sp03",
 		"nombre_sprint": "Herramientas de productividad",
 		"objetivo": "Utilizar Gulp",
@@ -20469,6 +20469,7 @@ var student = [
   {
     "id_coder": "CO002",
     "id": "SCL20171112",
+    "codigo": "SCL20171112",
     "password": "20171112",
     "nombre": "Randie",
     "apellido": "Biggerstaff",
@@ -22376,6 +22377,225 @@ var studentCredential =[
     "comments": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus."
   }
 ]
+ function redireccionar() {
+    setTimeout("location.href='http://www.login.cl'", 3000);
+  }
+
+    $(document).ready(function() {
+    $('select').material_select();
+
+    $(".striped").hide();
+    var notasAlumnas1 = 0;
+    $('#notasAl1').bind("enterKey",function(e){
+   		var valorNota = $(this).val();
+   		$("#notas1").empty();
+   		notasAlumnas1 += parseInt(valorNota);
+   		console.log(valorNota);
+   		var notaAcumulada = $("<p>").text(notasAlumnas1+ " puntos");
+   		$("#notas1").append(notaAcumulada);
+
+	});
+	$('.input-nota').keyup(function(e){
+    if(e.keyCode == 13)
+    {
+        $(this).trigger("enterKey");
+    }
+});
+
+
+    var porcentajeAsistencia1 = 100;
+    $("#jornada1").on("change", function(){
+    	var valorAsist = $(this).val();
+    	$("#jorn1").empty();
+    	console.log(valorAsist);
+    	if(valorAsist == "presente"){
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia1+"%");
+    		$("#jorn1").append(asistencia);
+    	}
+    	if(valorAsist == "faltajust"){
+    		porcentajeAsistencia1 = porcentajeAsistencia1 * 0.9;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia1+"%");
+    		$("#jorn1").append(asistencia);
+    	}
+    	if(valorAsist == "faltainjust"){
+    		porcentajeAsistencia1 = porcentajeAsistencia1 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia1+"%");
+    		$("#jorn1").append(asistencia);
+    	}
+    	if(valorAsist == "atrasojust"){
+    		porcentajeAsistencia1 = porcentajeAsistencia1 * 0.97;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia1+"%");
+    		$("#jorn1").append(asistencia);
+    	}
+    	if(valorAsist == "atrasoInjust"){
+    		porcentajeAsistencia1 = porcentajeAsistencia1 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia1+"%");
+    		$("#jorn1").append(asistencia);
+    	}
+   
+    });
+
+    var porcentajeAsistencia2 = 100;
+     $("#jornada2").on("change", function(){
+    	var valorAsist = $(this).val();
+    	$("#jorn2").empty();
+    	console.log(valorAsist);
+    	if(valorAsist == "presente"){
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia2+"%");
+    		$("#jorn2").append(asistencia);
+    	}
+    	if(valorAsist == "faltajust"){
+    		porcentajeAsistencia2 = porcentajeAsistencia2 * 0.9;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia2+"%");
+    		$("#jorn2").append(asistencia);
+    	}
+    	if(valorAsist == "faltainjust"){
+    		porcentajeAsistencia2 = porcentajeAsistencia2 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia2+"%");
+    		$("#jorn2").append(asistencia);
+    	}
+    	if(valorAsist == "atrasojust"){
+    		porcentajeAsistencia2 = porcentajeAsistencia2 * 0.97;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia2+"%");
+    		$("#jorn2").append(asistencia);
+    	}
+    	if(valorAsist == "atrasoInjust"){
+    		porcentajeAsistencia2 = porcentajeAsistencia2 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia2+"%");
+    		$("#jorn2").append(asistencia);
+    	}
+   
+    });
+     var porcentajeAsistencia3 = 100;
+	$("#jornada3").on("change", function(){
+		var valorAsist = $(this).val();
+		$("#jorn3").empty();
+		console.log(valorAsist);
+		if(valorAsist == "presente"){
+			var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia3+"%");
+			$("#jorn3").append(asistencia);
+		}
+		if(valorAsist == "faltajust"){
+			porcentajeAsistencia3 = porcentajeAsistencia3 * 0.9;
+			var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia3+"%");
+			$("#jorn3").append(asistencia);
+		}
+		if(valorAsist == "faltainjust"){
+			porcentajeAsistencia3 = porcentajeAsistencia3 * 0;
+			var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia3+"%");
+			$("#jorn3").append(asistencia);
+		}
+		if(valorAsist == "atrasojust"){
+			porcentajeAsistencia3 = porcentajeAsistencia3 * 0.97;
+			var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia3+"%");
+			$("#jorn3").append(asistencia);
+		}
+		if(valorAsist == "atrasoInjust"){
+			porcentajeAsistencia3 = porcentajeAsistencia3 * 0;
+			var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia3+"%");
+			$("#jorn3").append(asistencia);
+		}
+
+	});
+	var porcentajeAsistencia4 = 100;
+	$("#jornada4").on("change", function(){
+    	var valorAsist = $(this).val();
+    	$("#jorn4").empty();
+    	console.log(valorAsist);
+    	if(valorAsist == "presente"){
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia4+"%");
+    		$("#jorn4").append(asistencia);
+    	}
+    	if(valorAsist == "faltajust"){
+    		porcentajeAsistencia4 = porcentajeAsistencia4 * 0.9;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia4+"%");
+    		$("#jorn4").append(asistencia);
+    	}
+    	if(valorAsist == "faltainjust"){
+    		porcentajeAsistencia4 = porcentajeAsistencia4 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia4+"%");
+    		$("#jorn4").append(asistencia);
+    	}
+    	if(valorAsist == "atrasojust"){
+    		porcentajeAsistencia4 = porcentajeAsistencia4 * 0.97;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia4+"%");
+    		$("#jorn4").append(asistencia);
+    	}
+    	if(valorAsist == "atrasoInjust"){
+    		porcentajeAsistencia4 = porcentajeAsistencia4 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia4+"%");
+    		$("#jorn4").append(asistencia);
+    	}
+   
+    });
+	var porcentajeAsistencia5 = 100;
+	$("#jornada5").on("change", function(){
+    	var valorAsist = $(this).val();
+    	$("#jorn5").empty();
+    	console.log(valorAsist);
+    	if(valorAsist == "presente"){
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia5+"%");
+    		$("#jorn5").append(asistencia);
+    	}
+    	if(valorAsist == "faltajust"){
+    		porcentajeAsistencia5 = porcentajeAsistencia5 * 0.9;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia5+"%");
+    		$("#jorn5").append(asistencia);
+    	}
+    	if(valorAsist == "faltainjust"){
+    		porcentajeAsistencia5 = porcentajeAsistencia5 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia5+"%");
+    		$("#jorn5").append(asistencia);
+    	}
+    	if(valorAsist == "atrasojust"){
+    		porcentajeAsistencia5 = porcentajeAsistencia5 * 0.97;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia5+"%");
+    		$("#jorn5").append(asistencia);
+    	}
+    	if(valorAsist == "atrasoInjust"){
+    		porcentajeAsistencia5 = porcentajeAsistencia5 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia5+"%");
+    		$("#jorn5").append(asistencia);
+    	}
+   
+    });
+	var porcentajeAsistencia6 = 100;
+     $("#jornada6").on("change", function(){
+    	var valorAsist = $(this).val();
+    	$("#jorn6").empty();
+    	console.log(valorAsist);
+    	if(valorAsist == "presente"){
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia6+"%");
+    		$("#jorn6").append(asistencia);
+    	}
+    	if(valorAsist == "faltajust"){
+    		porcentajeAsistencia6 = porcentajeAsistencia6 * 0.9;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia6+"%");
+    		$("#jorn6").append(asistencia);
+    	}
+    	if(valorAsist == "faltainjust"){
+    		porcentajeAsistencia6 = porcentajeAsistencia6 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia6+"%");
+    		$("#jorn6").append(asistencia);
+    	}
+    	if(valorAsist == "atrasojust"){
+    		porcentajeAsistencia6 = porcentajeAsistencia6 * 0.97;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia6+"%");
+    		$("#jorn6").append(asistencia);
+    	}
+    	if(valorAsist == "atrasoInjust"){
+    		porcentajeAsistencia6 = porcentajeAsistencia6 * 0;
+    		var asistencia = $("<p>").attr('class', 'assist-porcent').text(porcentajeAsistencia6+"%");
+    		$("#jorn6").append(asistencia);
+    	}
+   
+    });
+    	
+
+  });
+
+
+//FUNICONALIDAD MARCELA
 $(document).ready(function() {
 	var sprintArr = [];
 	var cont = 0;
@@ -22385,7 +22605,8 @@ $(document).ready(function() {
 			
 				var nombreAlumn = studentCredential[i].first_name + " " + studentCredential[i].last_name;
 				var idAlumna = studentCredential[i].id;
-				squadArr.push({"nombreAlumn": nombreAlumn, "idcoder": idAlumna});
+				var fotoAlumna = studentCredential[i].photo;
+				squadArr.push({"nombreAlumn": nombreAlumn, "idcoder": idAlumna, "fotoAlumna": fotoAlumna});
 				cont++;
 			if(cont == 6){
 				sprintArr.push(squadArr);
@@ -22395,9 +22616,9 @@ $(document).ready(function() {
 		}
 	console.log(sprintArr);
 
-
+	var contImg = 1;
 	$("#select-sprint").on("change", function(){
-		
+		$(".striped").show();
 		var valueSprint = $("#select-sprint").val();
 		$(".contenido-sprint").empty();
 		$(".info-squad").empty();
@@ -22410,36 +22631,26 @@ $(document).ready(function() {
 		$(".contenido-sprint").append(objetivosSprint);
 
 		sprintArr[valueSprint].forEach(function(el){
+			var foto = $('<img src="'+el.fotoAlumna+'">');
 			var alumnSquad = $('<a href=alumna.html?coder='+el.idcoder+'>'+el.nombreAlumn + '</a>');
-			$(".info-squad").append(alumnSquad);
+			$("#img-nombre-"+contImg).append(foto);
+			$("#img-nombre-"+contImg).append(alumnSquad);
+			contImg++;
 		});
-
-
-
-
 
 	});
 
-//var coder_id = getParameterByName('coder');
 
-/*console.log(sprintArr.find(findCherries));
-function findCherries(fruit) { 
-    return sprintArr.id == coder_id;
-}
-sprintArr.forEach(function(el){
-
-});*/
-
-if($("#alumna-info").length > 0){
+/*if($("#alumna-info").length > 0){
     $(document).ready(function(){
     	//console.log(sprintArr[0][0].idcoder);
     	var coder_id = getParameterByName('coder');
     	console.log(coder_id);
-    	function findCherries(fruit) { 
-		    return fruit.id == coder_id;
+    	function findStudent(student) { 
+		    return student.id == coder_id;
 		}
 
-		console.log(studentCredential.find(findCherries)); 
+		console.log(studentCredential.find(findStudent)); 
 
     });
 }
@@ -22452,6 +22663,7 @@ function getParameterByName(name, url) {
       if (!results) return null;
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
+  }*/
 	
 });
+//FIN FUNCIONALIDAD MARCELA

@@ -15,6 +15,7 @@ var student = [
   {
     "id_coder": "CO002",
     "id": "SCL20171112",
+    "codigo": "SCL20171112",
     "password": "20171112",
     "nombre": "Randie",
     "apellido": "Biggerstaff",
