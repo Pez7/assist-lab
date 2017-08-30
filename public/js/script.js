@@ -22376,3 +22376,10 @@ var studentCredential =[
     "comments": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus."
   }
 ]
+ function redireccionar() {
+    setTimeout("location.href='http://www.login.cl'", 3000);
+  }
+
+    $(document).ready(function() {
+    $('select').material_select();
+  });

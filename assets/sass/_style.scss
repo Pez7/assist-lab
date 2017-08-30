@@ -3,16 +3,59 @@ body{
 	margin:0;
 	padding:0;
 }
+/*estilos pantalla1 loanding*/
+	#loand{
+		background-image: url(../img/fotolab.jpg);
+		background-size: cover;
+		height: 100vh;
+		opacity: 950%;
+        background-repeat: no-repeat;
 
-#loand{
-	background-color: $yellow_lab;
-    font-family: 'Encode Sans', sans-serif;
+	    img{
+	        border: 0;
+	        margin-top: 20px;
+	        width: 100%;
+	        margin-bottom: 0;
+	    }
+	    .tx{
+	    	margin-top: 70px;
+	    	color: #ff9800;
+	    
+	    	font-family: 'Encode Sans', sans-serif;
+	    	font-size: 30px;
+	    	font-weight: 800;
+            h3{
+               font-weight: 900;
+            }
+	    }
+	    i{
+	    	font-size: 20vh;
+	    }
+	}
+/*fin pantalla1 loanding*/
+ 
+/*pantalla marce*/
 
-    img{
-        border: 0;
-        margin-top: 64px;
-        width: 100%;
+#alumnas{
+	img{
+		width: 20px;
+		background-size: cover;
+		background-repeat: no-repeat;
 
-    }
+	}
+	input{
+		width: 60px;
+		.fot{
+        	width: 60px;
+        }
+	}
 }
 
+/*fin pantalla marce*/
+
+/*ejemplo cindy*/
+.bordered{
+	img{
+		width: 30px;
+	}
+}
