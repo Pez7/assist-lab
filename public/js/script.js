@@ -22410,12 +22410,48 @@ $(document).ready(function() {
 		$(".contenido-sprint").append(objetivosSprint);
 
 		sprintArr[valueSprint].forEach(function(el){
-			var alumnSquad = $("<p>").text(el.nombreAlumn);
+			var alumnSquad = $('<a href=alumna.html?coder='+el.idcoder+'>'+el.nombreAlumn + '</a>');
 			$(".info-squad").append(alumnSquad);
 		});
+
+
+
+
+
 	});
 
+//var coder_id = getParameterByName('coder');
 
+/*console.log(sprintArr.find(findCherries));
+function findCherries(fruit) { 
+    return sprintArr.id == coder_id;
+}
+sprintArr.forEach(function(el){
 
+});*/
+
+if($("#alumna-info").length > 0){
+    $(document).ready(function(){
+    	//console.log(sprintArr[0][0].idcoder);
+    	var coder_id = getParameterByName('coder');
+    	console.log(coder_id);
+    	function findCherries(fruit) { 
+		    return fruit.id == coder_id;
+		}
+
+		console.log(studentCredential.find(findCherries)); 
+
+    });
+}
+
+function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
 	
 });

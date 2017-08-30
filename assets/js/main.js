@@ -1,3 +1,5 @@
+
+//FUNICONALIDAD MARCELA
 $(document).ready(function() {
 	var sprintArr = [];
 	var cont = 0;
@@ -32,12 +34,36 @@ $(document).ready(function() {
 		$(".contenido-sprint").append(objetivosSprint);
 
 		sprintArr[valueSprint].forEach(function(el){
-			var alumnSquad = $("<p>").text(el.nombreAlumn);
+			var alumnSquad = $('<a href=alumna.html?coder='+el.idcoder+'>'+el.nombreAlumn + '</a>');
 			$(".info-squad").append(alumnSquad);
 		});
+
 	});
 
 
+/*if($("#alumna-info").length > 0){
+    $(document).ready(function(){
+    	//console.log(sprintArr[0][0].idcoder);
+    	var coder_id = getParameterByName('coder');
+    	console.log(coder_id);
+    	function findStudent(student) { 
+		    return student.id == coder_id;
+		}
 
+		console.log(studentCredential.find(findStudent)); 
+
+    });
+}
+
+function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }*/
 	
 });
+//FIN FUNCIONALIDAD MARCELA
