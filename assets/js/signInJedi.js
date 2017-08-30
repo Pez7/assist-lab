@@ -52,7 +52,7 @@ function validarPassJedi(){
 	 		console.log(valId + "VALIDACION OK");
 	 		if (validarIdJedi() === true && validarPassJedi() === true) {
 	 			console.log("pass ok");
-	 			alert("ok");
+	 			window.location.href = "calificacion.html";
 	 		}
 	 	});
 
