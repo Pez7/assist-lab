@@ -24,6 +24,7 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
+    "express": "^4.15.4",
     "jquery": "^3.2.1",
     "materialize-css": "^0.100.2"
   }
