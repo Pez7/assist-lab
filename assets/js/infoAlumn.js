@@ -26,7 +26,7 @@ $(document).ready(function(){
             var list= $('<li/>', {'class': 'collection-item avatar'});
             var img = $('<img/>',{'src': el.foto , 'class': 'circle'});
             var estudiante = $('<p/>', {'text' : el.nombre + ' ' + el.apellido, 'class' : 'title'});
-            var enlace = $('<a/>', {'href': 'perfilAlumna.html?coder=' + el.id});
+            var enlace = $('<a/>', {'href': 'alumna.html?coder=' + el.id});
 
             list.append(img);
             list.append(estudiante);

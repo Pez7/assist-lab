@@ -22425,6 +22425,31 @@ $(document).ready(function(){
   });
 
 $(document).ready(function(){
+
+if($("#perfil-alumnas").length > 0){
+    $(document).ready(function(){
+        //console.log(sprintArr[0][0].idcoder);
+        var coder_id = getParameterByName('coder');
+        console.log(coder_id);
+        function findStudent(student) { 
+            return student.id == coder_id;
+        }
+        console.log(studentCredential.find(findStudent)); 
+    });
+}
+function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+
+
+/*
     var coder_id = getParameterByName('coder');
     var settings = {
       "async": true,
@@ -22445,7 +22470,7 @@ $(document).ready(function(){
       
       var contImgName = $('<div/>');
       var imagen = $('<img/>', {'src' : alumna.foto});
-      var nameApe = $('<p/>', {'text' : alumna.nombre + alumna.apellido});
+      var nameApe = $('<p/>', {'text' : alumna.nombre + alumna.apellido, 'class': 'texto_alum'});
 
 
       contImgName.append(imagen);
@@ -22457,9 +22482,9 @@ $(document).ready(function(){
 
 
     });
-
+*/
   });
-
+/*
   function getParameterByName(name, url) {
       if (!url) url = window.location.href;
       name = name.replace(/[\[\]]/g, "\\$&");
@@ -22468,7 +22493,7 @@ $(document).ready(function(){
       if (!results) return null;
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
+  }*/
 $(document).ready(function(){
 function validarId(){
 	var variableUser= false;
