@@ -37,6 +37,7 @@ body{
 /*pantalla marce*/
 
 #alumnas{
+
 	img{
 		width: 20px;
 		background-size: cover;
@@ -44,18 +45,15 @@ body{
 
 	}
 	input{
-		width: 60px;
-		.fot{
-        	width: 60px;
-        }
+		width: 70px;
+		height: 30px;
 	}
+	select{
+		width: 70px;
+	}
+}
+.tit{
+	margin-top: 30px;
 }
 
 /*fin pantalla marce*/
-
-/*ejemplo cindy*/
-.bordered{
-	img{
-		width: 30px;
-	}
-}
